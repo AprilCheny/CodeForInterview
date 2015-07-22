@@ -6,7 +6,7 @@
 using namespace std;
 
 /*
- *说明：确定其中一个字符串的字符重新排列后，能否变成另一个字符串
+ *说明：确定其中一个字符串的字符重新排列后，能否变成另一个字符串，可以使用额外空间
  *举例：输入字符串"This is nowcoder"和"is This nowcoder"，输出true；输入字符串"Here you are"和"Are you here"，输出false
  */
 

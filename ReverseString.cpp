@@ -15,18 +15,28 @@ public:
 		if (iniString.empty() || (iniString.length() == 1))
 			return iniString;
 
+		char ch;
+		int len = iniString.length();
+		for (int i = 0; i < len / 2; i++)
+		{
+			ch = iniString[i];
+			iniString[i] = iniString[len - 1 - i];
+			iniString[len - 1 - i] = ch;
+		}
+
+		return iniString;
+
+		/*
+		string res;
 		string::reverse_iterator rb = iniString.rbegin();
 		string::reverse_iterator re = iniString.rend();
 
-		string res;
-
 		int len = iniString.length();
-		int count = 0;
 		for (; rb != iniString.rend(); rb++)
 			res.push_back(*rb);
 
-
 		return res;
+		*/
 	}
 };
 
